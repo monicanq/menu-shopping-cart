@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Menu from './comp/Menu';
+import { useState } from 'react';
+import Selected from './comp/Selected';
+import Dietaries from './comp/Dietaries';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+
+  const [cart, setCart] = useState([]);
+  const [total, setTotal] = useState(0);
+
+  return ( 
+    <div className="wrapper">
+    <div className="menu-summary">
+      <div className="container">
+        <div className="row">
+          <div className="col-6 menu-summary-left">
+            <span>{ total } items</span>
+          </div>
+          <Dietaries cart={ cart } setCart={ setCart }/>
+        </div>
+      </div>
     </div>
+    <div className="container menu-builder">
+      <div className="row">
+          <Menu cart={ cart } setCart={ setCart } total={ total } setTotal={ setTotal }/>
+        <div className="col-8"> 
+          <h2>Menu preview</h2>
+          <Selected cart={ cart } setCart={ setCart } total={ total } setTotal={ setTotal }/>
+        </div>
+      </div>
+    </div>
+  </div>
   );
 }
-
+ 
 export default App;
+
