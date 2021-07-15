@@ -30,7 +30,26 @@ const Dietaries = ({ cart, setCart }) => {
         setSelectedArray(update);
     }
 
-   
+    // useEffect(() => {  
+    //     const updateCart = [...cart]
+        
+    //     updateCart.map(item => {
+    //         if (selectedArray.length === 0) {
+    //             item.hide = false;
+    //         }
+
+    //         selectedArray.map(selected => {
+    //             if (!item.dietaries.includes(selected)){
+    //                 item.hide = true;
+    //             } else {
+    //                 item.hide = false;
+    //             }
+    //         })
+    //         setCart(updateCart)
+    //     })       
+    // }, [selectedArray])
+
+    
     return (
         <div className="col-6 menu-summary-right">
             {

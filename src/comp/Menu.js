@@ -53,6 +53,7 @@ const Menu = ( {cart, setCart, total, setTotal}) => {
     return ( 
         <div className="col-4">
             <div className="filters">
+                <label>Search: </label>
                 <input 
                 type="text"
                 required
