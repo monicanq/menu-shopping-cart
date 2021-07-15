@@ -2,7 +2,7 @@
     "items": [
         {
             "id": 1001,
-            "name": "Kale Caesar Pasta, Turmeric Satay Broccoli & Lemon Cashew Greens",
+            "name": "Winter Beetroot salad with fresh carrot, cabbage in a zesty orange and cayenne dressing.",
             "dietaries": [
                 "v",
                 "ve",
@@ -13,7 +13,7 @@
         },
         {
             "id": 1002,
-            "name": "Hake & Smoky Chickpeas, Brown Rice & Quinoa, Roasted Roots",
+            "name": "Garlic Seared Scallops, Wild Rice & Quinoa, Green Ceasar salad",
             "dietaries": [
                 "gf",
                 "df",
@@ -22,7 +22,7 @@
         },
         {
             "id": 1003,
-            "name": "Dill & Swiss Chard Potato Cakes, Summer Tabbouleh & Roasted Roots",
+            "name": "Artichoke & Oregano Potato Cakes, Summer Tabbouleh & Roasted Roots",
             "dietaries": [
                 "gf",
                 "df",
@@ -33,9 +33,8 @@
         },
         {
             "id": 1004,
-            "name": "Hake & Smoky Chickpeas, Herby Potatoes & Turmeric Satay Broccoli",
+            "name": "Baked cajun garlic butter cod & alfalfa sprouts",
             "dietaries": [
-                "df",
                 "gf",
                 "rsf",
                 "n!"
@@ -43,7 +42,7 @@
         },
         {
             "id": 1005,
-            "name": "Cuban Beef, Brown Rice & Quinoa, Green Pepper & Butterbean Salad",
+            "name": "Angus Beef, Wild Rice & Quinoa, Tomato & Basil Salad",
             "dietaries": [
                 "gf",
                 "df"
@@ -51,7 +50,7 @@
         },
         {
             "id": 1006,
-            "name": "Thai Chicken, Brown Rice & Quinoa, Lemon & Cashew Greens",
+            "name": "Free Range Roasted Chicken Breast, Brown Rice & Quinoa, Lemon & Cashew Greens",
             "dietaries": [
                 "gf",
                 "df",
@@ -61,7 +60,7 @@
         },
         {
             "id": 1007,
-            "name": "Cuban Beef, Herby Potatoes & Turmeric Satay Broccoli",
+            "name": "Grilled cab short rib with roast mushrooms, charred broccolini, local potato, chasseur sauce",
             "dietaries": [
                 "gf",
                 "df",
@@ -70,7 +69,7 @@
         },
         {
             "id": 1008,
-            "name": "Thai Chicken, Brown Rice & Quinoa & Turmeric Satay Broccolli",
+            "name": "Seared duck breast with bourbon apricots, potato galette, green beans, pecans, orange gastrique",
             "dietaries": [
                 "gf",
                 "df",
@@ -98,12 +97,12 @@
         },
         {
             "id": 10011,
-            "name": "Tuna Salad Box",
+            "name": "Creamy pea soup topped with melted cheese and sourdough croutons.",
             "dietaries": []
         },
         {
             "id": 10012,
-            "name": "Coconut Blondie with Dark Chocolate",
+            "name": "Coconut Sorbet with Dark Chocolate",
             "dietaries": [
                 "gf",
                 "v"
