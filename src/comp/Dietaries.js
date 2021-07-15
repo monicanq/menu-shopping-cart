@@ -2,21 +2,22 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 
 const Dietaries = ({ cart, setCart }) => {
-    let dietArray = [];
     const [dietObject, setDietObject] = useState( {'ve': 0, 'v': 0, 'rsf': 0, 'n!': 0, 'df': 0, 'gf': 0});
     const [selectedArray, setSelectedArray] = useState([]);
-
+    
     useEffect(() => {
+        let dietArray = [];
         let updateDietObject =  {'ve': 0, 'v': 0, 'rsf': 0, 'n!': 0, 'df': 0, 'gf': 0};
         
         cart.map(item => {
             for (let i = 0; i < item.qty; i++) dietArray.push(...item.dietaries)
+            return null;
         });
 
         dietArray.map(item => (item in dietObject) ? updateDietObject[item] +=  1 : updateDietObject[item] = 1);
         setDietObject({...updateDietObject});
 
-    }, [cart])
+    }, [cart, dietObject])
     
     const handleClick = (item, e) => {
         e.preventDefault();
@@ -29,26 +30,7 @@ const Dietaries = ({ cart, setCart }) => {
         setSelectedArray(update);
     }
 
-    useEffect(() => {  
-        const updateCart = [...cart]
-        
-        updateCart.map(item => {
-            if (selectedArray.length === 0) {
-                item.hide = false;
-            }
-
-            selectedArray.map(selected => {
-                if (!item.dietaries.includes(selected)){
-                    item.hide = true;
-                } else {
-                    item.hide = false;
-                }
-            })
-            setCart(updateCart)
-        })       
-    }, [selectedArray])
-
-    
+   
     return (
         <div className="col-6 menu-summary-right">
             {
