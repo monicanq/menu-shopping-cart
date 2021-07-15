@@ -10,26 +10,24 @@ const App = () => {
   const [total, setTotal] = useState(0);
 
   return ( 
-    <div className="wrapper">
-    <div className="menu-summary">
-      <div className="container">
-        <div className="row">
-          <div className="col-6 menu-summary-left">
-            <span>{ total } items</span>
-          </div>
-          <Dietaries cart={ cart } setCart={ setCart }/>
+    <div className="columns">
+        <div className="column box">
+            <h2 className='is-size-3 has-text-centered p-5'>Menu</h2>
+            <Menu cart={ cart } setCart={ setCart } total={ total } setTotal={ setTotal }/>
         </div>
-      </div>
-    </div>
-    <div className="container menu-builder">
-      <div className="row">
-          <Menu cart={ cart } setCart={ setCart } total={ total } setTotal={ setTotal }/>
-        <div className="col-8"> 
-          <h2>Menu preview</h2>
-          <Selected cart={ cart } setCart={ setCart } total={ total } setTotal={ setTotal }/>
+        <div className="column box">
+            <div className="container">
+            <h2 className='is-size-3 has-text-centered p-5'>Your Selection</h2>
+                <div className="is-flex is-justify-content-space-between">
+                    <span>Total: { total } items</span>
+                    <Dietaries cart={ cart } setCart={ setCart }/>
+
+                </div>
+            </div>
+            <div className="container">
+                <Selected cart={ cart } setCart={ setCart } total={ total } setTotal={ setTotal }/>
+            </div>
         </div>
-      </div>
-    </div>
   </div>
   );
 }

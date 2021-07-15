@@ -51,7 +51,7 @@ const Dietaries = ({ cart, setCart }) => {
 
     
     return (
-        <div className="col-6 menu-summary-right">
+        <div className='is-flex '>
             {
                 Object.entries(dietObject).map((item) =>(
                     <p onClick={ (e) => { handleClick(item, e) }} key={ item[0] }

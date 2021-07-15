@@ -98,7 +98,10 @@
         {
             "id": 10011,
             "name": "Creamy pea soup topped with melted cheese and sourdough croutons.",
-            "dietaries": []
+            "dietaries": [
+                "n!",
+                "rsf"
+            ]
         },
         {
             "id": 10012,

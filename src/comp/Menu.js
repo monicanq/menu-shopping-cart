@@ -51,10 +51,11 @@ const Menu = ( {cart, setCart, total, setTotal}) => {
     }
 
     return ( 
-        <div className="col-4">
+        <div>
             <div className="filters">
-                <label>Search: </label>
                 <input 
+                className= 'input is-medium'
+                placeholder='Search by ingredient'
                 type="text"
                 required
                 value={ name }
@@ -66,7 +67,7 @@ const Menu = ( {cart, setCart, total, setTotal}) => {
                 {isPending && <div>{ isPending }</div>}
                 {menuItems &&  menuItems.items.map( item =>
                     (
-                    <li className="item" id={ item.id } key={ item.id } onClick={ () => { handleAdd(item) } }>
+                    <li className="item box" id={ item.id } key={ item.id } onClick={ () => { handleAdd(item) } }>
                         <h2>{ item.name }</h2>
                         <p>
                             { item.dietaries.map(diet => <span key={ diet } className="dietary">{ diet }</span>) }

@@ -15,10 +15,10 @@ To fetch the data for the project you need to run a json server with the followi
 
 ## Functionality
 
-* Items on the menu can be searched by their name
+:heavy_check_mark: Items on the menu can be searched by their name
 
-* Items can be added or deleted from the cart
+:heavy_check_mark: Items can be added or deleted from the cart
 
-* There is a counter that keeps track of the total number of items selected
+:heavy_check_mark: There is a counter that keeps track of the total number of items selected
 
-* There is a counter that keeps track of the different allergens or dietaries for all the items selected
+:heavy_check_mark: There is a counter that keeps track of the different allergens or dietaries for all the items selected

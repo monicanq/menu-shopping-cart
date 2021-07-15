@@ -7,9 +7,8 @@ const useFetch = (url) =>  {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        // const abortCont = new AbortController();
 
-        fetch(url, /*{ 'Access-Control-Allow-Origin', '*'}*/)
+        fetch(url)
             .then(res => {
                 if(!res.ok){
                     throw Error('Error: ' + res.status);
@@ -30,7 +29,6 @@ const useFetch = (url) =>  {
                 }
             });
 
-            // return () => abortCont.abort();       
         }, [url]);
 
     return { data, isPending, error }

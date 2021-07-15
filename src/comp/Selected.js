@@ -20,7 +20,7 @@ const Selected = ({ cart, setCart, total, setTotal}) => {
                     return null;
                 } else {
                     return (
-                        <li className="item" key={ item.id }>
+                        <li className="item box" key={ item.id }>
                             <h2>{ item.name }</h2>
                             <p>
                                 { item.dietaries.map( diet =><span key={ diet } className="dietary">{ diet }</span>) }
