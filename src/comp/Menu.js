@@ -21,10 +21,11 @@ const Menu = ( {cart, setCart, total, setTotal}) => {
         if (data) {
             data.items.map((item) => {
                 if (item.name.toLowerCase().includes(search)) updateMenu.push(item); 
+                return null;
             });
         }
         setMenuItems({items: updateMenu});
-    },[name]);
+    },[name, data]);
 
 
     // Add or modify the products in the cart

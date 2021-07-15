@@ -45,7 +45,7 @@ const Dietaries = ({ cart, setCart }) => {
                 }
             })
             setCart(updateCart)
-        })
+        })       
     }, [selectedArray])
 
     
