@@ -2,7 +2,7 @@ import './App.css';
 import Menu from './comp/Menu';
 import { useState } from 'react';
 import Selected from './comp/Selected';
-import Dietaries from './comp/Dietaries';
+import Allergens from './comp/Allergens';
 
 const App = () => {
 
@@ -20,8 +20,7 @@ const App = () => {
             <h2 className='is-size-3 has-text-centered p-5'>Your Selection</h2>
                 <div className="is-flex is-justify-content-space-between">
                     <span>Total: { total } items</span>
-                    <Dietaries cart={ cart } setCart={ setCart }/>
-
+                    <Allergens cart={ cart } setCart={ setCart }/>
                 </div>
             </div>
             <div className="container">

@@ -1,6 +1,7 @@
 import React from 'react';
 import useFetch from '../hooks/useFetch';
 import { useState, useEffect } from 'react';
+import ArrayModifier from './ArrayModifier';
 
 
 const Menu = ( {cart, setCart, total, setTotal}) => {
@@ -27,34 +28,20 @@ const Menu = ( {cart, setCart, total, setTotal}) => {
         setMenuItems({items: updateMenu});
     },[name, data]);
 
-
-    // Add or modify the products in the cart
-    function handleAdd( product ) {
-        const foundIndex = cart.findIndex( item => item.name === product.name );
-
-        // If the item is in the cart
-        if (foundIndex >= 0){
-            const updateCart = [...cart];
-            const itemUpdate =  updateCart[foundIndex];
-            itemUpdate.qty += 1;
-            updateCart.splice(foundIndex, 1)
-            updateCart.push(itemUpdate);
-            setCart(updateCart);
-
-        // If it is not in the cart add it
-        } else {
-            product.qty = 1;
-            product.hide = false;
-            setCart([...cart, product ]);
-        }
-        setTotal(total + 1);
+    //Call ArrayModifier component to modify the cart
+    function handleClick (product, e) {
+        const modificationType = e.target.value;
+        const index = cart.findIndex( item => item.name === product.name );
+        const { data:array, totalUpdate} = ArrayModifier ({ index, modificationType, cart, product, total});
+        setCart(array);
+        setTotal(totalUpdate);
     }
 
     return ( 
         <div>
             <div className="filters">
                 <input 
-                className= 'input is-medium'
+                className= 'input is-medium '
                 placeholder='Search by ingredient'
                 type="text"
                 required
@@ -67,11 +54,15 @@ const Menu = ( {cart, setCart, total, setTotal}) => {
                 {isPending && <div>{ isPending }</div>}
                 {menuItems &&  menuItems.items.map( item =>
                     (
-                    <li className="item box" id={ item.id } key={ item.id } onClick={ () => { handleAdd(item) } }>
+                    <li className="item box" id={ item.id } key={ item.id } >
                         <h2>{ item.name }</h2>
                         <p>
-                            { item.dietaries.map(diet => <span key={ diet } className="dietary">{ diet }</span>) }
+                            { item.allergens.map(allergen => <span key={ allergen } className="allergeb">{ allergen }</span>) }
                         </p>
+                        <div className="is-flex is-justify-content-flex-end">
+                            <button className='button is-outlined qty' value='Add' onClick={ (e) => { handleClick( item, e ) } }>+</button>
+                            <button className='button is-outlined qty' value='Remove' onClick={ (e) => { handleClick( item, e ) } }>-</button>
+                        </div>
                     </li>
                     )
                 )}

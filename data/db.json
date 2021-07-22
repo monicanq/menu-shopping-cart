@@ -3,7 +3,7 @@
         {
             "id": 1001,
             "name": "Winter Beetroot salad with fresh carrot, cabbage in a zesty orange and cayenne dressing.",
-            "dietaries": [
+            "allergens": [
                 "v",
                 "ve",
                 "df",
@@ -14,7 +14,7 @@
         {
             "id": 1002,
             "name": "Garlic Seared Scallops, Wild Rice & Quinoa, Green Ceasar salad",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df",
                 "rsf"
@@ -23,7 +23,7 @@
         {
             "id": 1003,
             "name": "Artichoke & Oregano Potato Cakes, Summer Tabbouleh & Roasted Roots",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df",
                 "v",
@@ -34,7 +34,7 @@
         {
             "id": 1004,
             "name": "Baked cajun garlic butter cod & alfalfa sprouts",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "rsf",
                 "n!"
@@ -43,7 +43,7 @@
         {
             "id": 1005,
             "name": "Angus Beef, Wild Rice & Quinoa, Tomato & Basil Salad",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df"
             ]
@@ -51,7 +51,7 @@
         {
             "id": 1006,
             "name": "Free Range Roasted Chicken Breast, Brown Rice & Quinoa, Lemon & Cashew Greens",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df",
                 "rsf",
@@ -61,7 +61,7 @@
         {
             "id": 1007,
             "name": "Grilled cab short rib with roast mushrooms, charred broccolini, local potato, chasseur sauce",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df",
                 "n!"
@@ -70,7 +70,7 @@
         {
             "id": 1008,
             "name": "Seared duck breast with bourbon apricots, potato galette, green beans, pecans, orange gastrique",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df",
                 "rsf",
@@ -80,7 +80,7 @@
         {
             "id": 1009,
             "name": "Mackerel Salad Box",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df"
             ]
@@ -88,7 +88,7 @@
         {
             "id": 10010,
             "name": "Pasta Salad Box",
-            "dietaries": [
+            "allergens": [
                 "ve",
                 "v",
                 "gf",
@@ -98,7 +98,7 @@
         {
             "id": 10011,
             "name": "Creamy pea soup topped with melted cheese and sourdough croutons.",
-            "dietaries": [
+            "allergens": [
                 "n!",
                 "rsf"
             ]
@@ -106,7 +106,7 @@
         {
             "id": 10012,
             "name": "Coconut Sorbet with Dark Chocolate",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "v"
             ]
@@ -114,7 +114,7 @@
         {
             "id": 10013,
             "name": "Cinnamon Swirl Muffin",
-            "dietaries": [
+            "allergens": [
                 "gf",
                 "df"
             ]
@@ -122,7 +122,7 @@
         {
             "id": 10014,
             "name": "Apple, Date and Walnut Muffin",
-            "dietaries": [
+            "allergens": [
                 "df",
                 "gf",
                 "n!",
@@ -132,7 +132,7 @@
         {
             "id": 10015,
             "name": "Blueberry and Banana Muffin",
-            "dietaries": [
+            "allergens": [
                 "v",
                 "df",
                 "gf"
@@ -141,7 +141,7 @@
         {
             "id": 10016,
             "name": "Ombar Chocolate Bar - Dark 72%",
-            "dietaries": [
+            "allergens": [
                 "df",
                 "ve",
                 "gf"
@@ -150,7 +150,7 @@
         {
             "id": 10017,
             "name": "Ombar Bar - Milk",
-            "dietaries": [
+            "allergens": [
                 "ve",
                 "gf"
             ]
@@ -158,7 +158,7 @@
         {
             "id": 10018,
             "name": "Dark Chocolate Brownie",
-            "dietaries": [
+            "allergens": [
                 "v",
                 "gf"
             ]
@@ -166,7 +166,7 @@
         {
             "id": 10019,
             "name": "Mangajo Pomegranate",
-            "dietaries": [
+            "allergens": [
                 "ve",
                 "df",
                 "gf"
@@ -175,7 +175,7 @@
         {
             "id": 10020,
             "name": "Mangajo Acai",
-            "dietaries": [
+            "allergens": [
                 "ve",
                 "v",
                 "gf"

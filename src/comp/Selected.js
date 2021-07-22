@@ -1,18 +1,18 @@
 import React from 'react';
+import ArrayModifier from './ArrayModifier';
 
 const Selected = ({ cart, setCart, total, setTotal}) => {
     
-    function handleRemove(product) {
-        const productIndex = cart.findIndex(item => item.name === product.name);
-        const updateCart = [...cart];
-        setTotal(total - updateCart[productIndex].qty);
-        updateCart.splice(productIndex, 1)
-        setCart(updateCart);
+    function handleClick (product, e) {
+        const index = cart.findIndex(item => item.name === product.name);
+        const modificationType = e.target.value;
+        const { data, totalUpdate} = ArrayModifier ({ index, modificationType, cart, product, total});
+        setCart(data);
+        setTotal(totalUpdate);
         return ;
     }
 
     return ( 
-      
         <ul className="menu-preview">
             { cart.length > 0 && cart.map( item => {
                 if (item.hide) {
@@ -23,10 +23,10 @@ const Selected = ({ cart, setCart, total, setTotal}) => {
                         <li className="item box" key={ item.id }>
                             <h2>{ item.name }</h2>
                             <p>
-                                { item.dietaries.map( diet =><span key={ diet } className="dietary">{ diet }</span>) }
+                                { item.allergens.map( allergen =><span key={ allergen } className="allergen">{ allergen }</span>) }
                             </p>
                             <p> Quantity: { item.qty }</p>
-                            <button className="remove-item" onClick={() => { handleRemove(item) }}>x</button>
+                            <button className="remove-item delete" value='RemoveAll' onClick={(e) => { handleClick(item, e) }}>x</button>
                         </li>
                     )
                 }
